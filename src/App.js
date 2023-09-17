@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Disperse from './components/Disperse';
+import DuplicateAddressesValidator from './components/DuplicateAddressesValidator';
+import ValidEthereumAddressesValidator from './components/ValidEthereumAddressesValidator';
+import ValidNumbersValidator from './components/ValidNumbersValidator';
+import Combine from './components/Combine';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Disperse /> 
+    <DuplicateAddressesValidator />
+    <ValidEthereumAddressesValidator />
+    <ValidNumbersValidator />
+    <Combine />
     </div>
   );
 }
